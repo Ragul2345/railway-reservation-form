@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Reservation Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Railway Reservation Form</h2>
+        <form action="submit.php" method="post">
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <fieldset class="radio-group">
+                <legend>Class of Travel:</legend>
+                <input type="radio" id="first" name="class" value="First Class">
+                <label for="first">First Class</label>
+                <input type="radio" id="second" name="class" value="Second Class">
+                <label for="second">Second Class</label>
+                <input type="radio" id="sleeper" name="class" value="Sleeper">
+                <label for="sleeper">Sleeper</label>
+            </fieldset>
+
+            <fieldset class="checkbox-group">
+                <legend>Meal Preference:</legend>
+                <input type="checkbox" id="veg" name="meal[]" value="Vegetarian">
+                <label for="veg">Vegetarian</label>
+                <input type="checkbox" id="nonveg" name="meal[]" value="Non-Vegetarian">
+                <label for="nonveg">Non-Vegetarian</label>
+                <input type="checkbox" id="special" name="meal[]" value="Special">
+                <label for="special">Special Meal</label>
+            </fieldset>
+
+            <div class="btn-group">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
